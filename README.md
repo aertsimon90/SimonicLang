@@ -17,8 +17,8 @@ SimonicLang is a simple and versatile programming language designed for various 
 
 ### Installing
 
-1. Download the SimonicLang Compiler from [GitHub Releases](https://github.com/aertsimon90/SimonicLang/releases).
-2. Extract the contents of the downloaded archive.
+1. Install git
+2. Open cmd and enter: ```git clone https://github.com/aertsimon90/SimonicLang```
 
 ### Usage
 
