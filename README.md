@@ -13,6 +13,7 @@ SimonicLang is a simple and versatile programming language designed for various 
 ### Prerequisites
 
 - SimonicLang Compiler (`SLCompiler.exe`)
+- Python with Tkinter for GUI compilation
 
 ### Installing
 
@@ -21,17 +22,39 @@ SimonicLang is a simple and versatile programming language designed for various 
 
 ### Usage
 
+#### Running SimonicLang Script
+
 1. Open a terminal or command prompt.
-2. Navigate to the directory containing your SimonicLang script and `SLCompiler.exe`.
-3. Run the compiler with the following command:
+2. Navigate to the directory containing your SimonicLang script and `simlang.py`.
+3. Run the script with the following command:
 
    ```bash
-   SLCompiler.exe your_script.sl
+   python simlang.py your_script.sl
    ```
 
    Replace `your_script.sl` with the name of your SimonicLang script.
 
-4. The compiler will generate the executable output.
+#### Compiling with GUI
+
+1. Run the SimonicLang Compiler GUI using the following command:
+
+   ```bash
+   SLCompiler.exe
+   ```
+
+   This requires Python with Tkinter.
+
+#### Compiling with Batch Script
+
+1. Run the setup batch script using the following command:
+
+   ```bash
+   setup.bat
+   ```
+
+   This will set up the necessary dependencies for GUI compilation.
+
+2. After running the setup, you can compile SimonicLang scripts using the GUI.
 
 ## Example
 
@@ -54,4 +77,4 @@ This project is licensed under the [MIT License](https://github.com/aertsimon90/
 
 ## Acknowledgments
 
-- Special thanks to [Your Name] for contributing to the development of SimonicLang.
+- Special thanks to Simon Scap for contributing to the development of SimonicLang.
