@@ -69,7 +69,7 @@ httpSendRD;target;port;method;path/option;varname = HTTP Request Sending and get
 httpHead;header;value... = Set or create a http header (with f-string)
 httpHeadR;header = Remove http header (with f-string)
 math;option;varname = Start math progress and output writes to variable (with f-string)
-if;value1;option;value2;if=trueCode...;else=falseCode... = Start if progress (with f-string)
+IF;value1;option;value2;if=trueCode...;else=falseCode... = Start if progress (with f-string)
 help = Help for SimonicLang
 How to use F-String? (this process dont have mathing):
 $<n> = Newline
