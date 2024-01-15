@@ -1195,7 +1195,7 @@ def runCode(code):
 			print("httpHead;header;value... = Set or create a http header (with f-string)")
 			print("httpHeadR;header = Remove http header (with f-string)")
 			print("math;option;varname = Start math progress and output writes to variable (with f-string)")
-			print("if;value1;option;value2;if=trueCode...;else=falseCode... = Start if progress (with f-string)")
+			print("IF;value1;option;value2;if=trueCode...;else=falseCode... = Start if progress (with f-string)")
 			print("help = Help for SimonicLang")
 			print("How to use F-String? (this process dont have mathing):")
 			print("$<n> = Newline")
