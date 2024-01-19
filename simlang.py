@@ -531,7 +531,7 @@ def returnPythonExe(filename):
 def returnPythonHideExe(filename):
 	subprocess.run(["pip", "install", "pyinstaller"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	cc = "python -m PyInstaller --onefile --noconsole "+filename
-	subprocess.run(cc, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	subprocess.run(cc.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	remexea()
 def returnSlExe(filename):
 	with open(filename, "r") as f:
