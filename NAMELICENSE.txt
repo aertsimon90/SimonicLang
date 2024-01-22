@@ -1,9 +1,0 @@
-SimonicLang Name License
-
-22/1/2024
-
-You are free to use the software in any kind of project, whether it's for commercial or non-commercial purposes, and whether it's free or paid.
-Feel free to share and modify the software as you need.
-The software comes as-is, without any warranties. The developer is not responsible for any issues or damages that may arise.
-The name and copyright of the software belong to the developer. This license doesn't grant any rights to use the developer's name or branding.
-By using the software, you agree to comply with the terms and conditions of this license.
