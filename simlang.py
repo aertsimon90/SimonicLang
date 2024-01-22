@@ -458,7 +458,7 @@ def fstring(text):
 		text = text.replace("$<sys.path>", os.getcwd())
 		text = text.replace("$<sys.prcsr>", platform.processor())
 		text = text.replace("$<sys.pyver>", platform.python_version())
-		text = text.replace("$<sys.slver>", "1.0.0")
+		text = text.replace("$<sys.slver>", "1.0.1")
 		text = text.replace("$<sys.mac>", platform.machine())
 		text = text.replace("$<sys.arch>", ', '.join(platform.architecture()))
 	if "$<random.apikey" in text:
