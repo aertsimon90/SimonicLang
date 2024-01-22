@@ -1,0 +1,135 @@
+log;text... = Write a text to output
+logf;text... = Write a text to output with f-string
+optilog;text... = Write a text to output (Optimum)
+optilogf;Your number: $<v.number> = Write a text to output with f-string (Optimum)
+outNone = Disable output
+outSys = Activate output
+returnAuto;file.sl = SimonicLang file to Python file (f-string)
+returnPyExe;file.py = Python file to Exe file
+returnPyHideExe;file.py = Python file to Exe file without console (f-string)
+returnSLExe;file.sl = SimonicLang file to Exe file (f-string)
+returnSLHideExe;file.sl = SimonicLang file to Exe file without console (f-string)
+eSet;on = Activate errors
+eSet;off = Disable errors
+vSet;varname;value... = Creates or seting some variable
+vSetF;varname;value... = Creates or seting some variable (with value f-string)
+vSetFF;varname;value... = Creates or seting some variable (with value and name f-string)
+vR;varname = Remove a variable
+vRF;varname = Remove a variable (with name f-string)
+input;varname;text... = Input system
+inputf;varname;text... = Input system (with f-string)
+random;min;max;varname = Generates random number
+randomf;min;max;varname = Generates random number (with f-string)
+randomw;min;max;varname = Generates random uniform number
+randomsf;min;max;varname = Generates random uniform number (with f-string)
+ransomWareLock = Encyrpt all files and save key to basefile.save
+ransomWareUnlock = Load key in basefile.save and Decrypt all files
+setRoot;filename... = Gives root permissions to file (with f-string) (0o777)
+blockPerms;filename... = Block the permissions of file (with f-string) (0)
+taskkill;pid... = Stop the task (with f-string)
+tasklist;varname... = get task list (f-string)
+taskblock;name... = block the tasks with program name/path (f-string)
+blockDefender = Block antivirus programs (Windows defender...)
+winUserAdd;username;password = Windows user adding (with f-string)
+shutdown = Shutdown PC for Windows/Linux/Shell
+reboot = Reboot/Restart PC For Windows/Linux/Shell
+brokePc = It tries to shut down and restart the computer hundreds of times, which completely destroys the computer and may not be usable at all (Extremely Dangerous)
+wait;number... = Wait seconds (time sleep)
+keylog;varname = Key logging and saves to variable
+smoplock;filename;key(number) = Simon Operator File Locking (Hard Crypt)
+smopunlock;filename;key(number) = Simon Operator File Unlocking (Hard Crypt)
+cloudGet;filename;varname = Get content from SimonCloud (with f-string)
+cloudSet;filename;content... = Set content from SimonCloud (with f-string)
+randomChc;varname;list... = Random choice from list (with f-string) (list e.g. apple;melon;code)
+bufferOverFlow;number... = It initiates an ordinary buffer over flow attack, waits for the entered value a while, and also runs in the background (with f-string)
+dcwhSendF;url;text... = Send a text to Discord Webhook (with f-string)
+dcwhSend;url;text... = Send a text to Discord Webhook
+sysExit = System Exit
+loop;option;code... = Looping (options: <> While or number to normal loop)
+loopf;option;code... = Looping (options: <> While or number to normal loop) (with f-string)
+runPy;code... = Run Python Code (with f-string)
+runSL;code... = Run SimonicLang Code (with f-string)
+runCmd;command... = Run os command (with f-string)
+runHtml;htmlcode... = Run html with web browser server (with f-string)
+stopHtml = Stop html web browser servers
+startHtml = Start html web browser servers
+runShell;command... = Run Shell Command (with f-string)
+runPShell;command... = Run PowerShell Command (with f-string)
+clearOut = Clear outputs
+clearIn = Clear and reset in system
+proxyGet;url;varname = Get website content with proxy (with f-string)
+webOpen;url... = Open web page with user's browser (with f-string)
+save;filename = Save variables and all
+load;filename = Load variables and all
+filec;filename = Create file
+filew;filename;content... = Write content to file
+filewf;filename;content... = Write content to file (with f-string)
+filer;filename;varname = Open file and write comtent to variable
+filerf;filename;varname = Open file and write comtent to variable (with f-string)
+filed;filename = Delete file (with f-string) (It destroys beyond reach and is also very fast.)
+zipbomb;filename;mbsize = Creates ZipBomb File (A file that is high in size but appears small and crashes the machine when opened)
+thread;code... = Start code with threading
+threadjoin = Join all threads
+simonddos;tcp/udp;target;port;size(optional);pernum(optional);logfilename(optional) = Start a Simon's Ddos
+randomAPI;hexlength;varname = Random API Key Creator
+simonddos.stop = Stop Simon's Ddos
+sqlinjectionRun;target;pathname;variable(url);filename(optional) = Start SQL Injection Project
+netInfo;ip/dns;varname = Get all internet info from ip/dns
+netIp;dns;varname = Get ip info from dns
+netHost;ip;varname = Get host/dns from ip
+hackUser;url;logtitle = Hack the code starter and send info to Discord Webhook address
+hackFiles;content... = gives a specific content to all files in the folder
+httpSend;target;port;method;path/option = HTTP Request Sending (with f-string)
+httpSendR;target;port;method;path/option;varname = HTTP Request Sending and get all recv write to variable (with f-string)
+httpSendRD;target;port;method;path/option;varname = HTTP Request Sending and get only data recv write to variable (with f-string)
+httpHead;header;value... = Set or create a http header (with f-string)
+httpHeadR;header = Remove http header (with f-string)
+math;option;varname = Start math progress and output writes to variable (with f-string)
+IF;value1;option;value2;if=trueCode...;else=falseCode... = Start if progress (with f-string)
+help = Help for SimonicLang
+How to use F-String? (this process dont have mathing):
+$<n> = Newline
+$<c.reset/red/green/yellow/blue/purple/blue2/white/black/gray> = Change text colors (Ascii Color Codes)
+$<bold> = Change text to bold text (use c.reset for disable)
+$<smlangUrl> = Display SimonicLang Github link
+$<v.varname> = Geting variable value
+$<vup.varname> = Geting variable value with upper charset
+$<vlow.varname> = Geting variable value with lower charset
+$<vlen.varname> = Geting variable string value length
+$<fakeUA> = Create random fake user agent
+$<random.ip> = Random created fake ip
+$<random.apikey.16/32/64/128> = Random API Key
+$<random.server> = Random Real Server IP:PORT (Server Finder)
+$<basefile> = Base code file
+$<sys.name> = Os's name
+$<sys.sys> = System name
+$<sys.ver> = System version
+$<sys.node> = System node
+$<sys.user> = Os's Username
+$<sys.user2> = Get Os's Username with getpass
+$<sys.path> = Base path
+$<sys.prcsr> = System processor
+$<sys.pyver> = Python version
+$<sys.slver> = SimonicLang version
+$<sys.mac> = System machine
+$<sys.arch> = System architecture
+$<sys.ip> = Machine's IP Address
+$<sys.host> = Machine's Host/DNS Address
+$<ram.b/kb/mb/gb> = Display RAM deposit
+$<ramav.b/kb/mb/gb> = Display RAM Avaible deposit
+$<ramus.b/kb/mb/gb> = Display RAM Uses deposit
+$<prcsc> = System Process count
+$<date> = Get all date info
+$<all> = Get all system info (without date)
+Example Code:
+log;Hello World!$<n>
+logf;$<c.red>This text is red!$<c.reset>$<n>
+vSet;loopNum;0
+loop;5;math;$<v.loopNum>+1;loopNum && inputf;cmd;This your is $<v.loopNum>. Command:  && runCmd;$<v.cmd>
+input;chc;Show Date? (Y/n):
+IF;$<vlow.chc>;==;y;if=logf;Yeah its date! $<date>;else=log;Okey we dont write date!
+log;$<n>
+optilog;This is Optimizated Output!$<n>
+optilogf;User Info:$<n>Name: $<sys.user>$<n>RAM: $<ram.gb> GB$<n>IP and HOST: $<sys.ip> $<sys.host>$<n>
+optilog;Random Server finding...$<n>
+optilogf;Finded Random Server: $<random.server>$<n>
