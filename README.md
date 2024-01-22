@@ -1,4 +1,4 @@
-# SimonicLang Programming Language v1.0.0 DEMO
+# SimonicLang Programming Language v1.0.1 DEMO
 
 SimonicLang is a simple and versatile programming language designed for various scripting tasks. This README provides an overview of the language and instructions on how to use the SimonicLang compiler (`SLCompiler.exe`).
 
