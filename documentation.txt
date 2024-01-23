@@ -1,3 +1,5 @@
+fstr;code... = Use any command with f-string
+loadAllMods = load all extension mods (psutil/fake_useragent/datetime/requests/keyboard/tkinter)
 log;text... = Write a text to output
 logf;text... = Write a text to output with f-string
 optilog;text... = Write a text to output (Optimum)
@@ -45,6 +47,8 @@ bufferOverFlow;number... = It initiates an ordinary buffer over flow attack, wai
 dcwhSendF;url;text... = Send a text to Discord Webhook (with f-string)
 dcwhSend;url;text... = Send a text to Discord Webhook
 sysExit = System Exit
+errorBox;text... = Show error box (f-string)
+whois;target;varname... = Search info with whois (f-string)
 loop;option;code... = Looping (options: <> While or number to normal loop)
 loopf;option;code... = Looping (options: <> While or number to normal loop) (with f-string)
 runPy;code... = Run Python Code (with f-string)
