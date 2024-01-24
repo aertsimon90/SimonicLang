@@ -95,9 +95,9 @@ def proxyGet0(targeturl):
                 pass
         import requests
         proxy, auth = randomProxy()
-        text = requests.get(targeturl, headers=httpHeaders, proxies=proxy, auth=auth).text
-    except:
-        text = ""
+        text = requests.get(targeturl, headers=httpHeaders, proxies=proxy, auth=auth, timeout=2).text
+    except Exception as e:
+        text = str(e)
     return text
 
 def getprocs():
