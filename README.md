@@ -79,3 +79,5 @@ This project is licensed under the [MIT License](https://github.com/aertsimon90/
 ## Acknowledgments
 
 - Special thanks to Simon Scap for contributing to the development of SimonicLang.
+
+# [Show Politics](https://github.com/aertsimon90/politics/blob/main/README.md)
