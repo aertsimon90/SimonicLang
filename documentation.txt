@@ -54,6 +54,8 @@ sysExit = System Exit
 errorBox;text... = Show error box (f-string)
 msgBox;title;text = Show message text in gui page.
 hrefBox;title;text;url = URL Redirection gui page
+inputBox;title;text;varname = Get input from user with gui page
+confirmBox;title;text;varname = Get confirming result from user with gui page (0=Not allowed, 1=Allowed)
 whois;target;varname... = Search info with whois (f-string)
 loop;option;code... = Looping (options: <> While or number to normal loop)
 loopf;option;code... = Looping (options: <> While or number to normal loop) (with f-string)
