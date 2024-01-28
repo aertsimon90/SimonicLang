@@ -735,10 +735,10 @@ def remexea():
 	os.rmdir("dist")
 def orint(text):
 	global output
-	print(text, end="", file=output)
+	print(text.replace("$<n>", "\n"), end="", file=output)
 def orinto(text):
 	global output
-	output.write(text)
+	output.write(text.replace("$<n>", "\n"))
 	output.flush()
 def bofs():
 	global bofList
