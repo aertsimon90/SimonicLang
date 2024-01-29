@@ -68,9 +68,42 @@ vSet;loopNum;0
 loop;5;math;$<v.loopNum>+1;loopNum && inputf;cmd;This your is $<v.loopNum>. Command:  && runCmd;$<v.cmd>
 ```
 
+## Seasons
+
+We categorize commands in SimonicLang into seasons:
+
+### 1. Season (Simple and Legal Commands)
+- log
+- logf
+- vSet
+- loop
+- input
+- vR
+- random
+- ...
+
+### 2. Season (Commands Far from Being Legal)
+- rwLock
+- rwUnlock
+- blockDefender
+- simonddos
+- encrypt
+- decrypt
+- ...
+
+### 3. Season (Commands Requiring Complexity or Server Platform)
+- cloudGet
+- cloudSet
+- cloudCom
+- cloudStart
+- serverCalculate
+- httpSend
+- randomAPI
+- ...
+
 ## Documentation
 
-For a detailed list of commands, F-string usage, and other features, refer to the [SimonicLang Documentation](https://github.com/aertsimon90/SimonicLang/blob/main/documentation.txt).
+For detailed information on command lists, F-string usage, and other features, refer to the [SimonicLang Documentation](https://github.com/aertsimon90/SimonicLang/blob/main/documentation.txt).
 
 ## License
 
