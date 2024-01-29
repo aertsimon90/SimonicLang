@@ -97,7 +97,7 @@ def gc_get(trueLevel, ports):
 class SimonCloud:
 	def __init__(self, target, port=80):
 		self.s = socket.socket()
-		self.s.settimeout(10)
+		self.s.settimeout(0.5)
 		self.s.connect((target, port))
 		self.t = target;self.p = port
 	def set(self, name, content): # Data Seting
