@@ -1858,7 +1858,7 @@ def runCode(code):
 			print("cloudSet;server.pythonanywhere.com;filename;content... = Set content from SimonCloud (with f-string)")
 			print("cloudCom;server.pythonanywhere.com;outputVarname;command... = Start Command Prompt Command from SimonCloud (with f-string)")
 			print("cloudStart = Start SimonCloud Server for PythonAnywhere Server Coding (with flask) (with f-string)")
-			print("SimonServer.Create;ip or dns;password = Create a server from SimonServer (Free and unlimited)")
+			print("SimonServer.Create;ip or dns;password = Create a server from SimonServer (Free and unlimited) (SimonServer: A versatile Internet platform facilitating server deployment, management, and interaction with other servers. Exclusive servers accessible solely through SimonicLang, not found on the worldwide web, enabling unique communication capabilities.)")
 			print("SimonServer.SetFile;ip or dns;password;filename;content... = Create file or open file and set content from server")
 			print("SimonServer.GetFile;ip or dns;password;filename;varname = Get file content from server")
 			print("SimonServer.SetOpenFile;ip or dns;password;filename;content... = Create public file or open public file and write content from server")
