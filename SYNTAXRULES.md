@@ -1,0 +1,4 @@
+- Each command must be written on a single line.
+- If multiple commands are to be added on the same line, they should be separated by " %& ", but be careful, there is a space before and after the symbol.
+- For more than 2 commands in a loop, similarly, " && " is used.
+- Variable names or various names can be written with all characters except the ; character.
