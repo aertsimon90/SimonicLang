@@ -72,6 +72,7 @@ smsc;varname = Midi Music Creator tool start on variable (SimonicMusic SMSC)
 smsc.tempo;varname;tempo = Change all time music speed
 smsc.add;varname;code... = Add note/music to your midi file (code='Track/Pitch/Duration/Volume' or use 'null' to wait)
 smsc.save;varname;filename = Save your midi file to file
+aimusic;filename;length(e.g. 5);tempo(e.g. 120);durations(e.g. 1);tracks(guitar/piano/bass/violin/flute/trumpet/drum/trap/lofi);noteadd(optional: A note number for add to note) = AI Music Generator from SimonicMusic
 sendBotMail;target;subject;mes... = Send E-Mail with SimonicLang free bot account ( simoniclang@hotmail.com )
 sendMail;serverSmtp;port;account;password;target;subject;mes = Send E-Mail
 randomChc;varname;list... = Random choice from list (with f-string) (list e.g. apple;melon;code)
