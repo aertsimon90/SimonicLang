@@ -85,6 +85,11 @@ msgBox;title;text = Show message text in gui page.
 hrefBox;title;text;url = URL Redirection gui page
 inputBox;title;text;varname = Get input from user with gui page
 confirmBox;title;text;varname = Get confirming result from user with gui page (0=Not allowed, 1=Allowed)
+fullBox;backgroundColor;textColor;text = Display text to all of screen
+fullBoxUnClose;backgroundColor;textColor;text = Display text to all of screen (with disable closing)
+changeBg.color;red%;green%;blue% = Change background to color (Only Windows)
+changeBg.image;image_name_or_path = Change background to windows (Only Windows)
+disableExit = disable sys.exit functions
 whois;target;varname... = Search info with whois (f-string)
 loop;option;code... = Looping (options: <> While or number to normal loop)
 loopf;option;code... = Looping (options: <> While or number to normal loop) (with f-string)
