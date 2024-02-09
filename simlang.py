@@ -2785,7 +2785,7 @@ def runCode(code):
 			print("smsc.tempo;varname;tempo = Change all time music speed ")
 			print("smsc.add;varname;code... = Add note/music to your midi file (code='Track/Pitch/Duration/Volume' or use 'null' to wait)")
 			print("smsc.save;varname;filename = Save your midi file to file")
-			print("smai;varname = An artificial intelligence model with its own NLP algorithm")
+			print("smai;varname = An artificial intelligence model with its own NLP algorithm (SimonicAI)")
 			print("smai.clearbuffer;varname = Resets additional use of AI (Resets Nerve level and AI preference algorithm)")
 			print("smai.resetbrain;varname = Completely resets the brain of artificial intelligence")
 			print("smai.use;varname = The method of changing decisions to give different answers")
