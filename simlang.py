@@ -1589,18 +1589,18 @@ def runCode(code):
 			filename = o[0]
 			key = o[1]
 			with open(filename, "rb") as f:
-				c = f.read()
+				c = f.read().decode()
 			c = SL_ENCRYPT(c, key)
 			with open(filename, "wb") as f:
-				f.write(c)
+				f.write(c.encode())
 		elif m == "decrypt":
 			filename = o[0]
 			key = o[1]
 			with open(filename, "rb") as f:
-				c = f.read()
+				c = f.read().decode()
 			c = SL_DECRYPT(c, key)
 			with open(filename, "wb") as f:
-				f.write(c)
+				f.write(c.encode())
 		elif m == "eSet":
 			if ot == "on":
 				errors = True
@@ -1961,10 +1961,10 @@ def runCode(code):
 				vars[fstring(o[1])] = fstring(f.read())
 		elif m == "file.readbin":
 			with open(o[0], "rb") as f:
-				vars[o[1]] = f.read()
+				vars[o[1]] = f.read().decode()
 		elif m == "file.readbinf":
 			with open(fstring(o[0]), "rb") as f:
-				vars[fstring(o[1])] = fstring(f.read())
+				vars[fstring(o[1])] = fstring(f.read().decode())
 		elif m == "file.delete":
 			name = fstring(o[0])
 			with open(name, "w") as f:
