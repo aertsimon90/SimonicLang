@@ -40,7 +40,7 @@ class SimonicAI: # An artificial intelligence model with its own NLP algorithm
 		self.brain = {}
 	def use(self): # The method of changing decisions to give different answers
 		self.chocLevel += 1
-		self.xyzLevel += 2
+		self.xyzLevel += self.chocLevel+2
 	def getXyz(self): # Outputs artificial intelligence statistics in json format
 		w0 = 0
 		w1 = 0
@@ -182,6 +182,7 @@ class SimonicAI: # An artificial intelligence model with its own NLP algorithm
 				if adds:
 					aa += self.aiChoc(["", "", "", "", "", ".", ",", "!", "?", "..."])
 				recv.append(aa)
+			self.use()
 		return joiner.join(recv)
 	def save(self, file): # Save the brain (with encrypt)
 		saver = {"brain": self.brain, "level": self.level, "chocLevel": self.chocLevel, "xyz": self.xyzLevel}
