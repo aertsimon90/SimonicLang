@@ -178,7 +178,7 @@ class SimonicAI: # An artificial intelligence model with its own NLP algorithm
 					aa += self.aiChoc(["", "", "", "", "", ".", ",", "!", "?", "..."])
 				recv.append(aa)
 			else:
-				aa = self.aiChoc(s0)
+				aa = self.aiChoc(s1)
 				if adds:
 					aa += self.aiChoc(["", "", "", "", "", ".", ",", "!", "?", "..."])
 				recv.append(aa)
