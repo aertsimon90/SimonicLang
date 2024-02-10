@@ -103,6 +103,14 @@ smai.save;varname;file = Save ai brain to file
 smai.load;varname;file = Load ai brain in file
 smai.goodquiz;varname;outvarname = It is an accuracy measurement mechanism, it measures the similarity of each decision of artificial intelligence (In short, it measures the similarity of the desired answer and the given answer.)
 aimusic;filename;length(e.g. 5);tempo(e.g. 120);durations(e.g. 1);tracks(guitar/piano/bass/violin/flute/trumpet/drum/trap/lofi);noteadd(optional: A note number for add to note) = AI Music Generator from SimonicMusic
+setVolume;value = Set all volume
+setBrightness;value = Set monitor brightness
+setDateTime;year;month;day;hour;minute;second = Set Date && time
+setRandomVolume = Set random all volume
+setRandomBrightness = Set monitor random brightness
+setRandomDateTime = Set random Date && time
+restoreDateTime = Restore date && time with servers
+checkNetwork;varname = Check internet on/off (Results: 0=Close 1=Open)
 sendBotMail;target;subject;mes... = Send E-Mail with SimonicLang free bot account ( simoniclang@hotmail.com )
 sendMail;serverSmtp;port;account;password;target;subject;mes = Send E-Mail
 randomChc;varname;list... = Random choice from list (with f-string) (list e.g. apple;melon;code)
