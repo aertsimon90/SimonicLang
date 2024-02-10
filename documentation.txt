@@ -26,6 +26,12 @@ vReplace;varname;textto;text = Replace text from variable
 vSelect;varname;number;objvarname = Select object/character from variable
 vSelectL;varname;minnumber;maxnumber;objvarname = Select objects/characters from variable
 vReverse;varname = Reverse the variable
+vJson;varname = Set or create json variable
+vJsonSet;varname;item;type(number/text);value = Set item from json variable
+vJsonGet;varname;item;varname2 = Get json variable item and insert to variable 2
+vJsonDel;varname;item = Delete json variable item
+vJsonDumps;varname;indent(1=True 0=False);varname2 = Json to text and insert to variable 2
+vJsonLoads;varname;varname2 = Load dumped json text to real json variable
 input;varname;text... = Input system
 inputf;varname;text... = Input system (with f-string)
 serverCalculate;ports;trueLevel;varname = Calculate how much servers in the world (e.g. serverCalculate;80,443;10;example)
@@ -168,6 +174,8 @@ IF;value1;option;value2;if=trueCode...;else=falseCode... = Start if progress (wi
 help = Help for SimonicLang
 How to use F-String? (this process dont have mathing):
 $<n> = Newline
+$<t> = Tab character
+$<r> = Carriage return
 $<c.reset/red/green/yellow/blue/purple/blue2/white/black/gray> = Change text colors (Ascii Color Codes)
 $<bold> = Change text to bold text (use c.reset for disable)
 $<smlangUrl> = Display SimonicLang Github link
