@@ -7,10 +7,10 @@ optilogf;Your number: $<v.number> = Write a text to output with f-string (Optimi
 outNone = Disable output
 outSys = Activate output
 returnAuto;file.sl = SimonicLang file to Python file (f-string)
-returnPyExe;file.py = Python file to Exe file
-returnPyHideExe;file.py = Python file to Exe file without console (f-string)
-returnSLExe;file.sl;addByte(optional) = SimonicLang file to Exe file (f-string) (addByte=It is a value you can use to increase the file size. Use this value as the number of characters, otherwise nothing will happen.)
-returnSLHideExe;file.sl;addByte(optional) = SimonicLang file to Exe file without console (f-string) (addByte=It is a value you can use to increase the file size. Use this value as the number of characters, otherwise nothing will happen.)
+if you want Python to exe file:
+-1 open cmd
+-2 enter: pip install PyInstaller
+-3 enter: python3 -m PyInstaller --onefile filename.py
 eSet;on = Activate errors
 eSet;off = Disable errors
 vSet;varname;value... = Creates or seting some variable
