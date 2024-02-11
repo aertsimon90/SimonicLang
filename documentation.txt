@@ -61,6 +61,7 @@ winUserRemove;username = Windows user removing (with f-string)
 screenshot;filename = Take a screenshot and save to file
 unicodeText;varname;min_ord;max_ord = List the unicode characters
 unicodeRandomText;varname;min_ord;max_ord;length = Create text variable have random characters
+beep;name(info/warn/error/quest) = Play a windows beep sound
 shutdown = Shutdown PC for Windows/Linux/Shell
 reboot = Reboot/Restart PC For Windows/Linux/Shell
 logout = Logout from PC User For Windows/Linux/Shell
