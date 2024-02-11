@@ -103,9 +103,10 @@ smai.save;varname;file = Save ai brain to file
 smai.load;varname;file = Load ai brain in file
 smai.goodquiz;varname;outvarname = It is an accuracy measurement mechanism, it measures the similarity of each decision of artificial intelligence (In short, it measures the similarity of the desired answer and the given answer.)
 aimusic;filename;length(e.g. 5);tempo(e.g. 120);durations(e.g. 1);tracks(guitar/piano/bass/violin/flute/trumpet/drum/trap/lofi);noteadd(optional: A note number for add to note) = AI Music Generator from SimonicMusic
-smgui;varname;width;height = Create SimonicGUI Application (with pygame powered) (What's rgb list?= (red%, green%, blue%))
+smgui;varname = Create SimonicGUI Application (with pygame powered) (What's rgb list?= (red%, green%, blue%))
+smgui.fullsc;varname;width;height = Create Application Screen (FullScreen Mode)
+smgui.boxsc;varname;width;height = Create Application Screen (Box/Little Mode)
 smgui.title;varname;text = Change Application title
-smgui.fullsc;varname = Change screen size to full screen
 smgui.jump;varname;pady = Jump to new pixels
 smgui.bg;id(0=Random blobs 1=Random blocks 2=One color standart);color(Rgblist);objcolor(Rgblist,objs=Blocks&Circles);power(Objects spawning strength) = Fill the all screen to background
 smgui.text;varname;font(Name);color(Rgblist);sizepixel(e.g 20);pady;text... = Insert text to screen
