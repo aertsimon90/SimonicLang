@@ -103,6 +103,16 @@ smai.save;varname;file = Save ai brain to file
 smai.load;varname;file = Load ai brain in file
 smai.goodquiz;varname;outvarname = It is an accuracy measurement mechanism, it measures the similarity of each decision of artificial intelligence (In short, it measures the similarity of the desired answer and the given answer.)
 aimusic;filename;length(e.g. 5);tempo(e.g. 120);durations(e.g. 1);tracks(guitar/piano/bass/violin/flute/trumpet/drum/trap/lofi);noteadd(optional: A note number for add to note) = AI Music Generator from SimonicMusic
+smgui;varname;width;height = Create SimonicGUI Application (with pygame powered) (What's rgb list?= (red%, green%, blue%))
+smgui.title;varname;text = Change Application title
+smgui.fullsc;varname = Change screen size to full screen
+smgui.jump;varname;pady = Jump to new pixels
+smgui.bg;id(0=Random blobs 1=Random blocks 2=One color standart);color(Rgblist);objcolor(Rgblist,objs=Blocks&Circles);power(Objects spawning strength) = Fill the all screen to background
+smgui.text;varname;font(Name);color(Rgblist);sizepixel(e.g 20);pady;text... = Insert text to screen
+smgui.circle;varname;color(Rgblist);sizepixel;pady = Insert circle to screen
+smgui.box;varname;color(rgblist);width;height;pady = Insert box to screen
+smgui.run;varname;closable?(1=True 0=False) = Run the mainloop on application
+smgui.stop;varname = Stop the mainloop on application and destroy & clear all screen
 setVolume;value = Set all volume
 setBrightness;value = Set monitor brightness
 setDateTime;year;month;day;hour;minute;second = Set Date && time
@@ -127,6 +137,7 @@ fullBox;backgroundColor;textColor;text = Display text to all of screen
 fullBoxUnClose;backgroundColor;textColor;text = Display text to all of screen (with disable closing)
 changeBg.color;red%;green%;blue% = Change background to color (Only Windows)
 changeBg.image;image_name_or_path = Change background to windows (Only Windows)
+changeBg.random = Change background to random color (Only Windows)
 disableExit = disable sys.exit functions
 whois;target;varname... = Search info with whois (f-string)
 loop;option;code... = Looping (options: <> While or number to normal loop)
