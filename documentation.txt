@@ -127,6 +127,7 @@ smgui.bg;id(0=Random blobs 1=Random blocks 2=One color standart);color(Rgblist);
 smgui.text;varname;font(Name);color(Rgblist);sizepixel(e.g 20);pady;text... = Insert text to screen
 smgui.circle;varname;color(Rgblist);sizepixel;pady = Insert circle to screen
 smgui.box;varname;color(rgblist);width;height;pady = Insert box to screen
+smgui.button;varname;bgcolor(rgblist);textcolor(rgblist);width;height;pady;font;text;code... = Insert button to screen
 smgui.run;varname;closable?(1=True 0=False) = Run the mainloop on application
 smgui.stop;varname = Stop the mainloop on application and destroy & clear all screen
 setVolume;value = Set all volume
