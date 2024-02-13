@@ -72,6 +72,7 @@ brokePc = It tries to shut down and restart and logout the computer infinite of 
 startupAdd;command = Add cmd command to PC's startup system (For Windows)
 wait;number... = Wait seconds (time sleep)
 keylog;varname = Key logging and saves to variable
+keyinput;varname = Keyboard inputing
 encrypt;filename;password = Encrypt file with SimonicLang Crypto
 decrypt;filename;password = Decrypt file with SimonicLang Crypto
 cloudGet;server.pythonanywhere.com;filename;varname = Get content from SimonCloud (with f-string)
@@ -123,6 +124,7 @@ smgui.fullsc;varname;width;height = Create Application Screen (FullScreen Mode)
 smgui.boxsc;varname;width;height = Create Application Screen (Box/Little Mode)
 smgui.title;varname;text = Change Application title
 smgui.jump;varname;pady = Jump to new pixels
+smgui.backjump;varname;pady = Jump to back pixels
 smgui.bg;id(0=Random blobs 1=Random blocks 2=One color standart);color(Rgblist);objcolor(Rgblist,objs=Blocks&Circles);power(Objects spawning strength) = Fill the all screen to background
 smgui.text;varname;font(Name);color(Rgblist);sizepixel(e.g 20);pady;text... = Insert text to screen
 smgui.circle;varname;color(Rgblist);sizepixel;pady = Insert circle to screen
