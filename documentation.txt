@@ -55,6 +55,9 @@ taskkill;pid... = Stop the task (with f-string)
 tasklist;varname... = get task list (f-string)
 taskblock;name... = block the tasks with program name/path (f-string)
 moveMouse;x_add;y_add;duration = Move the mouse
+moveMouseTo;x_pos;y_pos;duration = Mote the mouse to location
+mouseClick = Click with mouse on screen
+keyboardWrite;text = Write with user's keyboard
 shakeMouse;power;duration = Move the mouse to random location
 disableMouse = Disable the mouse
 disableKeyboard = Disable the keyboard
@@ -212,6 +215,7 @@ httpHead;header;value... = Set or create a http header (with f-string)
 httpHeadR;header = Remove http header (with f-string)
 math;option;varname = Start math progress and output writes to variable (with f-string)
 IF;value1;option;value2;if=trueCode...;else=falseCode... = Start if progress (with f-string)
+break = Break the loop/loopf/forLoop
 help = Help for SimonicLang
 How to use F-String? (this process dont have mathing):
 $<n> = Newline
