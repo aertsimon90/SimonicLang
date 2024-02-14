@@ -35,6 +35,7 @@ vJsonGet;varname;item;varname2 = Get json variable item and insert to variable 2
 vJsonDel;varname;item = Delete json variable item
 vJsonDumps;varname;indent(1=True 0=False);varname2 = Json to text and insert to variable 2
 vJsonLoads;varname;varname2 = Load dumped json text to real json variable
+vAddToNewLine;varname;text = Moves to a new line in the string object and writes the text to be added
 input;varname;text... = Input system
 inputf;varname;text... = Input system (with f-string)
 serverCalculate;ports;trueLevel;varname = Calculate how much servers in the world (e.g. serverCalculate;80,443;10;example)
