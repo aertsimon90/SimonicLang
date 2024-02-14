@@ -73,6 +73,8 @@ startupAdd;command = Add cmd command to PC's startup system (For Windows)
 wait;number... = Wait seconds (time sleep)
 keylog;varname = Key logging and saves to variable
 keyinput;varname = Keyboard inputing
+getPing;target;varname = Get ping ms
+getMyPing;varname = Get User's ping ms
 encrypt;filename;password = Encrypt file with SimonicLang Crypto
 decrypt;filename;password = Decrypt file with SimonicLang Crypto
 cloudGet;server.pythonanywhere.com;filename;varname = Get content from SimonCloud (with f-string)
@@ -245,6 +247,12 @@ $<ramav.b/kb/mb/gb> = Display RAM Avaible deposit
 $<ramus.b/kb/mb/gb> = Display RAM Uses deposit
 $<prcsc> = System Process count
 $<date> = Get all date info
+$<date.y> = Get now year
+$<date.m> = Get now month
+$<date.d> = Get now day
+$<date.h> = Get now hour
+$<date.mn> = Get now minute
+$<date.s> = Get now second
 $<all> = Get all system info (without date)
 Example Code:
 log;Hello World!$<n>
