@@ -65,6 +65,7 @@ disableTaskManager = Disable the task manager for a second
 blockWindowsDefender = Disable the windows defender for a second
 winUserAdd;username;password = Windows user adding (with f-string)
 winUserRemove;username = Windows user removing (with f-string)
+notify;app_name;title;message;duration = Create a notification (for Android/Linux/Windows)
 screenshot;filename = Take a screenshot and save to file
 unicodeText;varname;min_ord;max_ord = List the unicode characters
 unicodeRandomText;varname;min_ord;max_ord;length = Create text variable have random characters
