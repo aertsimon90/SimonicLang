@@ -1,4 +1,5 @@
 fstr;code... = Use any command with f-string
+stopall = Stop all threads and exit from program
 loadAllMods = load all extension mods (psutil/fake_useragent/datetime/requests/keyboard/tkinter)
 log;text... = Write a text to output
 logf;text... = Write a text to output with f-string
@@ -70,6 +71,7 @@ winUserAdd;username;password = Windows user adding (with f-string)
 winUserRemove;username = Windows user removing (with f-string)
 notify;app_name;title;message;duration = Create a notification (for Android/Linux/Windows)
 screenshot;filename = Take a screenshot and save to file
+capture;filename;width;height = Take a video capture photo from first camera and save to file
 unicodeText;varname;min_ord;max_ord = List the unicode characters
 unicodeRandomText;varname;min_ord;max_ord;length = Create text variable have random characters
 beep;name(info/warn/error/quest) = Play a windows beep sound
