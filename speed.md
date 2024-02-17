@@ -7,7 +7,7 @@ These tests were conducted on version 1.0.3 DEMO of SimonicLang.
 
 **The speed test code is defined as follows:**
 
-```sl
+```simoniclang
 thread;1;loop;1;wait;10 && vSet;stop;1
 vSet;q;0
 vSet;stop;0
