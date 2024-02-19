@@ -84,6 +84,8 @@ startupAdd;command = Add cmd command to PC's startup system (For Windows)
 wait;number... = Wait seconds (time sleep)
 keylog;varname = Key logging and saves to variable
 keyinput;varname = Keyboard inputing
+ipapiGet;ipaddr;name(network/version/city/region/region_code/country/country_code/country_code_iso3/country_name/country_capital/country_tld/continent_code/postal/latitude/longitude/timezone/ufc_offset/country_calling_code/currency/currency_name/languages/country_area/country_popolation/asn/org);varname = Get ip api info and save to variable
+openLocation;ipaddr = Open ip address location with google maps on web browser
 getPing;target;varname = Get ping ms
 getMyPing;varname = Get User's ping ms
 encrypt;filename;password = Encrypt file with SimonicLang Crypto
@@ -280,7 +282,6 @@ $<date.d> = Get now day
 $<date.h> = Get now hour
 $<date.mn> = Get now minute
 $<date.s> = Get now second
-$<all> = Get all system info (without date)
 Example Code:
 log;Hello World!$<n>
 logf;$<c.red>This text is red!$<c.reset>$<n>
