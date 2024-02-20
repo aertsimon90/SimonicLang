@@ -8,6 +8,10 @@ optilogf;Your number: $<v.number> = Write a text to output with f-string (Optimi
 outNone = Disable output
 outSys = Activate output
 returnAuto;file.sl = SimonicLang file to Python file (f-string)
+returnPyToC;file.py = Python to C Code (returns to file.py.c file) (with Cython)
+returnPyToExe;file.py = Python to Exe program with gcc (returns file.py.exe)
+returnCToExe;file.c = C code to exe program (returns file.c.exe)
+returnSLToC;file.sl = SimonicLang to C Code (return file.sl.py.c) (with gcc and cython) (so slow in the sometimes)
 if you want SimonicLang to exe file:
 -1 open compiler and enter run: returnAuto;file.sl
 -2 open cmd
@@ -200,6 +204,7 @@ startHtml = Start html web browser servers
 runShell;command... = Run Shell Command (with f-string)
 runPShell;command... = Run PowerShell Command (with f-string)
 runExe;filename... = Run exe file
+runAsync;await;code... = Run SimonicLang code with Async
 clearOut = Clear outputs
 clearIn = Clear and reset in system
 proxyGet;url;varname = Get website content with random proxy (with f-string)
