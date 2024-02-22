@@ -162,6 +162,12 @@ simac.rmdir;varname;path = Remove directory from os (Simacleus)
 simac.listdir;varname;path;resultVarname = Get text list of files on directory path (Simacleus)
 simac.run;varname = It replaces the virtual operating system with real-time Python compiler commands (So, while normal commands are used, the virtual OS is actually used for file operations) (Simacles)
 simac.stop;varname = It stops real-time command change in the loop (Commands continue to be executed in different ways, re-importing the modules can fix it) (Simacleus)
+nebu.portscan;host;port;varname(results: 1=True 0=False) = Scan port of host (Nebuleus Tools)
+nebu.findserver;port;varname = Find a real server ip from web (Nebuleus Tools)
+nebu.findproxy;port;varname = Find a real HTTP Proxy server ip from web (Nebuleus Tools)
+nebu.findurls;url;varname = Find all urls from the target and save to list variable (Nebuleus Tools)
+nebu.findtextobj;url;objname;varname = Find html text variable objects from html code and save to list variable (Nebuleus Tools)
+nebu.findintobj;url;objname;varname = Find html integer variable objects from html code and save to list variable (Nebuleus Tools)
 setVolume;value = Set all volume
 setBrightness;value = Set monitor brightness
 setDateTime;year;month;day;hour;minute;second = Set Date && time
