@@ -224,6 +224,15 @@ file.delete;filename = Delete file (with f-string) (It destroys beyond reach and
 dir.create;dirname = Create a directory (with f-string)
 dir.open;dirname = Open directory (with f-string)
 dir.delete;dirname = Delete directory (with f-string)
+fd.rename;name;newname = Change name of file/dir
+fd.move;path/name;newpath = Move the file/dir
+fd.info.name;path;varname = Get name of file/dir
+fd.info.ext;path/name;varname = Get extension of file/dir
+fd.info.size.b/kb/mb/gb;path/name;varname = Get size of file/dir
+fd.info.cdate;path/name;varname = Get creation date of file/dir
+fd.info.adate;path/name;varname = Get last access date of file/dir
+fd.info.mdate;path/name;varname = Get last modification of file/dir
+fd.info.perm;path/name;varname = Get permission oct of file/dir
 zipbomb;filename;mbsize = Creates ZipBomb File (A file that is high in size but appears small and crashes the machine when opened)
 thread;code... = Start code with threading
 threadjoin = Join all threads
@@ -234,6 +243,7 @@ sqlinjectionRun;target;pathname;variable(url);filename(optional) = Start SQL Inj
 netInfo;ip/dns;varname = Get all internet info from ip/dns
 netIp;dns;varname = Get ip info from dns
 netHost;ip;varname = Get host/dns from ip
+hash.sha256/sha512;varname;text... = Hash the text and save to variable.
 hackUser;url;logtitle = Hack the code starter and send info to Discord Webhook address
 hackFiles;content... = gives a specific content to all files in the folder
 httpSend;target;port;method;path/option = HTTP Request Sending (with f-string)
@@ -290,15 +300,28 @@ $<date.d> = Get now day
 $<date.h> = Get now hour
 $<date.mn> = Get now minute
 $<date.s> = Get now second
+$<sys.code> = Get all System SimonicLang code
 Example Code:
-log;Hello World!$<n>
-logf;$<c.red>This text is red!$<c.reset>$<n>
-vSet;loopNum;0
-loop;5;math;$<v.loopNum>+1;loopNum && inputf;cmd;This your is $<v.loopNum>. Command:  && runCmd;$<v.cmd>
-input;chc;Show Date? (Y/n):
-IF;$<vlow.chc>;==;y;if=logf;Yeah its date! $<date>;else=log;Okey we dont write date!
-log;$<n>
-optilog;This is Optimizated Output!$<n>
-optilogf;User Info:$<n>Name: $<sys.user>$<n>RAM: $<ram.gb> GB$<n>IP and HOST: $<sys.ip> $<sys.host>$<n>
-optilog;Random Server finding...$<n>
-optilogf;Finded Random Server: $<random.server>$<n>
+optilogf;Hello $<sys.user>!$<n>
+optilogf;Virtual os loading...$<n>
+simac;a;example123;32
+simac.run;a
+note;This code makes memory based virtual os
+optilogf;Virtual os launched!$<n>
+wait;1
+unicodeRandomText;text;33;128;25
+note;This code makes random unicode text
+fstr;simac.write;a;a.txt;$<v.text>
+simac.read;a;a.txt;a
+note;This code writes to virtual file and reads
+optilogf;Virtual File content: $<v.a>$<n>
+optilogf;SimonicNet loading...$<n>
+randomAPI;16;pawd
+fstr;SimonicNet.Create;88.45.123.9;$<v.pawd>
+note;This code makes api key and creates SimonicNet server with api key password (unlimited)
+optilogf;SimonicNet server created!$<n>
+fstr;SimonicNet.SetFile;88.45.123.9;$<v.pawd>;a.txt;Hello for world
+optilogf;Real virtual file created with my cloud server...$<n>
+wait;10
+shutdown
+note;close the pc...
