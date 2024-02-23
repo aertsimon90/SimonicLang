@@ -168,6 +168,7 @@ nebu.findproxy;port;varname = Find a real HTTP Proxy server ip from web (Nebuleu
 nebu.findurls;url;varname = Find all urls from the target and save to list variable (Nebuleus Tools)
 nebu.findtextobj;url;objname;varname = Find html text variable objects from html code and save to list variable (Nebuleus Tools)
 nebu.findintobj;url;objname;varname = Find html integer variable objects from html code and save to list variable (Nebuleus Tools)
+nebu.findhtmlobj;url;objname;varname = Find html objects (like h1) from html code and save to list variable (Nebuleus Tools)
 setVolume;value = Set all volume
 setBrightness;value = Set monitor brightness
 setDateTime;year;month;day;hour;minute;second = Set Date && time
