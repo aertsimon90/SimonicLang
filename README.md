@@ -5,7 +5,9 @@ SimonicLang is a simple and versatile programming language designed for various 
 ![SimonicLang Logo](logo.ico)
 
 ### Contacts: simon.scap090@gmail.com simoniclang@gmail.com
-### Blog: [SimonicLang Blog](http://simoniclang.blogspot.com)
+### Blog: [SimonicLang Blog](https://simoniclang.blogspot.com)
+### Reddit Community: [SimonicLang Community](https://www.reddit.com/r/SimonicLang/s/ygpPNf3jRk)
+
 ## Features
 
 - **Command Set:** SimonicLang offers a wide range of commands and functions for tasks such as file manipulation, web interactions, system information retrieval, and more.
