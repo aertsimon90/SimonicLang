@@ -10,4 +10,4 @@ pip install win10toast win32api
 pip install plyer
 pip install Pillow
 pip install autopep8
-pip install fs midiutil flask psutil fake_useragent datetime
+pip install fs midiutil flask psutil fake_useragent datetime pyperclip
