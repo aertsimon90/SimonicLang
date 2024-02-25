@@ -183,6 +183,9 @@ sc.stop;varname = Stop all Server Socket (ServerSocket Tools)
 firo.allpaths;path;varname = Find all directorys in the path and save to list variable (Firoleus Tools)
 firo.search;path;varname;query = Find files have query in the path and save to list variable (Firoleus Tools)
 firo.searchext;path;varname;ext(e.g .jpg .img) = Find files have extension in the path and save to list variable (Firoleus Tools)
+openai;varname;your_api_key = A simple OpenAI module
+openai.set;varname;engine = Set engine of OpenAI variable
+openai.talk;varname;resultVarname;size(1=50 max tokens 2=100 max tokens...);text/prompt... = Create completion with OpenAI variable
 setVolume;value = Set all volume
 setBrightness;value = Set monitor brightness
 setDateTime;year;month;day;hour;minute;second = Set Date && time
