@@ -1,4 +1,4 @@
-pip install --upgrade python
+pip install --upgrade pip
 pip install tkinter
 pip install pygame
 pip install openai==0.28
