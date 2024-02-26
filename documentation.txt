@@ -98,6 +98,7 @@ decrypt;filename;password = Decrypt file with SimonicLang Crypto
 rpcFile;ipaddr;filepath = Send file with rpc
 rpcCom;ipaddr;command... = Send cmd command with rpc
 rpcSetup = Setup the rpc protocol
+download;url;filename;output(1=True 0=False) = Download a file from web
 cloudGet;server.pythonanywhere.com;filename;varname = Get content from SimonCloud (with f-string)
 cloudSet;server.pythonanywhere.com;filename;content... = Set content from SimonCloud (with f-string)
 cloudCom;server.pythonanywhere.com;outputVarname;command... = Start Command Prompt Command from SimonCloud (with f-string)
@@ -171,6 +172,9 @@ nebu.findtextobj;url;objname;varname = Find html text variable objects from html
 nebu.findintobj;url;objname;varname = Find html integer variable objects from html code and save to list variable (Nebuleus Tools)
 nebu.findhtmlobj;url;objname;varname = Find html objects (like h1) from html code and save to list variable (Nebuleus Tools)
 nebu.send;type(tcp/udp);host;port;pack... = Send to target a pack (Nebuleus Tools)
+nebu.send_withrecv;type(tcp/udp);host;port;varname;pack... = Send to target a pack and get recv save to variable (Nebuleus Tools)
+nebu.sendssl;type(tcp/udp);host;port;pack... = Send to target a ssl(https encrypted) pack (Nebuleus Tools)
+nebu.sendssl_withrecv;type(tcp/udp);host;port;varname;pack... = Send to target a ssl(https encrypted) pack and get recv save to variable (Nebuleus Tools)
 sc;varname;type(tcp/udp);host(e.g. localhost);port(e.g. 5000) = Create a Server Socket in client (ServerSocket Tools)
 sc.accept;varname;id(e.g. myclient) = Accept connection and get requests save to a data id (ServerSocket Tools)
 sc.get_data;varname;id;resultVarname = Get request data from client data id (ServerSocket Tools)
