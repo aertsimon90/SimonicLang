@@ -1,4 +1,7 @@
 fstr;code... = Use any command with f-string
+func;varname;args(e.g. arg1::arg2...);code... = Create a function
+func.run;varname;args(e.g. arg1::arg2...) = Run a code of the function
+func.delete;varname = Delete the function
 stopall = Stop all threads and exit from program
 loadAllMods = load all extension mods (psutil/fake_useragent/datetime/requests/keyboard/tkinter)
 log;text... = Write a text to output
@@ -334,6 +337,8 @@ $<date.h> = Get now hour
 $<date.mn> = Get now minute
 $<date.s> = Get now second
 $<sys.code> = Get all System SimonicLang code
+$<sys.args.number> = Replace the system runing args
+$<args.argname> = Replace the args
 Example Code:
 optilogf;Hello $<sys.user>!$<n>
 optilogf;Virtual os loading...$<n>
@@ -356,5 +361,7 @@ optilogf;SimonicNet server created!$<n>
 fstr;SimonicNet.SetFile;88.45.123.9;$<v.pawd>;a.txt;Hello for world
 optilogf;Real virtual file created with my cloud server...$<n>
 wait;10
+func;hello;text;log;$<args.text>
+func.run;hello;Hello for users!
 shutdown
 note;close the pc...
