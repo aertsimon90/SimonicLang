@@ -194,6 +194,14 @@ firo.searchext;path;varname;ext(e.g .jpg .img) = Find files have extension in th
 openai;varname;your_api_key = Create a simple OpenAI ai
 openai.set;varname;engine = Set engine of OpenAI variable
 openai.talk;varname;resultVarname;size(1=50 max tokens 2=100 max tokens...);text/prompt... = Create completion with OpenAI variable
+smdb;varname = Create a database with SimonicDB
+smdb.set;varname;dataname;onewayhash?(1=True 0=False);onewayhash_length(character length);text/data... = Add or set a data
+smdb.set_with_encrypt;varname;dataname;onewayhash?(1=True 0=False);onewayhash_length(character length);password;text/data... = Add or set a data (with SimonicDB Encrypter)
+smdb.get;varname;dataname;resultVarname = Get data from database
+smdb.get_with_decrypt;varname;dataname;password;resultVarname = Get data from database (with SimonicDB Decrypter)
+smdb.del;varname;dataname = Delete the data from database
+smdb.save;varname;file = Save database to a file
+smdb.load;varname;file = Load database from a file
 clipboard.copy;text... = Copy in to the clipboard
 clipboard.paste;varname = Get text on the clipboard
 setVolume;value = Set all volume
@@ -239,6 +247,7 @@ runShell;command... = Run Shell Command (with f-string)
 runPShell;command... = Run PowerShell Command (with f-string)
 runExe;filename... = Run exe file
 runAsync;await;code... = Run SimonicLang code with Async
+runBF;outputVarname;tapeMemorySize;code... = Run BrainFuck code and save output to variable
 clearOut = Clear outputs
 clearIn = Clear and reset in system
 proxyGet;url;varname = Get website content with random proxy (with f-string)
