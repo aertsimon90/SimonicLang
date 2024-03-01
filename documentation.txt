@@ -103,6 +103,8 @@ rpcCom;ipaddr;command... = Send cmd command with rpc
 rpcSetup = Setup the rpc protocol
 download;url;filename;output(1=True 0=False) = Download a file from web
 shorturl;varname;url... = Short the URL with tinyurl url shortener and save to variable
+rotateScreen;degree(only 90, 180, 270) = Rotate the screen on hour path
+rotateScreenRandom = Rotate the screen on hour path and random degree
 cloudGet;server.pythonanywhere.com;filename;varname = Get content from SimonCloud (with f-string)
 cloudSet;server.pythonanywhere.com;filename;content... = Set content from SimonCloud (with f-string)
 cloudCom;server.pythonanywhere.com;outputVarname;command... = Start Command Prompt Command from SimonCloud (with f-string)
