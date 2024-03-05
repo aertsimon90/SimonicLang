@@ -59,9 +59,19 @@ sqlExec;varname;code... = Execute SQL Code with cursor (f-string)
 sqlClose;varname = Close sqlite3 connection and delete variable (f-string)
 setRoot;filename... = Gives root permissions to file (with f-string) (0o777)
 blockPerms;filename... = Block the permissions of file (with f-string) (0)
-taskkill;pid... = Stop the task (with f-string)
-tasklist;varname... = get task list (f-string)
-taskblock;name... = block the tasks with program name/path (f-string)
+task.list_pid=name;varname = List of the tasks and save to json variable (e.g. {pid: name})
+task.list_pid=status;varname = List of the tasks and save to json variable (e.g. {pid: status})
+task.list_pid=ram;varname = List of the tasks and save to json variable (e.g. {pid: ramUsage})
+task.list_pid=cpu;varname = List of the tasks and save to json variable (e.g. {pid: cpuUsage})
+task.list_name=pid;varname = List of the tasks and save to json variable (e.g. {name: pid})
+task.pid;varname;name = Get pid of the task name
+task.name;varname;pid = Get task name of the pid
+task.status;varname;pid = Get status(sleeping/running) of the pid
+task.cpu;varname;pid = Get cpu usage of the pid
+task.ram;varname;pid = Get ram/memory usage of the pid
+task.mypid;varname = Get main task pid (SimonicLang Task PID)
+task.kill;name_or_pid = Kill the process
+task.block;name_or_pid = Block the process
 moveMouse;x_add;y_add;duration = Move the mouse
 moveMouseTo;x_pos;y_pos;duration = Mote the mouse to location
 mouseClickRight = Click with mouse on screen (Right click)
@@ -71,10 +81,10 @@ keyboardWrite;text = Write with user's keyboard
 shakeMouse;power;duration = Move the mouse to random location
 disableMouse = Disable the mouse
 disableKeyboard = Disable the keyboard
-disableTaskManager = Disable the task manager for a second
-blockWindowsDefender = Disable the windows defender for a second
-blockBrowsers = Disable the user's browsers with taskblock (10 Browsers: Opera/Brave/Chrome/Edge/Firefox/Safari/Chromium/Vivaldi/DuckDuckGO/I Explore)
-blockAntiviruses = Disable the 30 top antivirus tasks with taskblock (Avast/AVG/Bitdefender/Kaspersky/McAfee/Norton/Avira/TrendMicro/ESET/Malwarebytes/WindowsDefender/Sophos/Panda/F-Secure/BullGuard/Webroot/GData/VIPRE/Comodo/Symantec/360/AvastUI/AVGUI/BitdefenderUI/KasperskyUI/McAfeeUI/NortonUI/AviraUI/TrendMicroUI/ESETUI/MalwarebytesUI/WindowsDefenderUI/SophosUI/PandaUI/F-SecureUI/BullGuardUI/WebrootUI/GDataUI/VIPREUI/ComodoUI/SymantecUI/360UI)
+disableTaskManager = Disable the task manager
+blockWindowsDefender = Disable the windows defender
+blockBrowsers = Disable the user's browsers with task.block (10 Browsers: Opera/Brave/Chrome/Edge/Firefox/Safari/Chromium/Vivaldi/DuckDuckGO/I Explore)
+blockAntiviruses = Disable the 30 top antivirus tasks with task.block (Avast/AVG/Bitdefender/Kaspersky/McAfee/Norton/Avira/TrendMicro/ESET/Malwarebytes/WindowsDefender/Sophos/Panda/F-Secure/BullGuard/Webroot/GData/VIPRE/Comodo/Symantec/360/AvastUI/AVGUI/BitdefenderUI/KasperskyUI/McAfeeUI/NortonUI/AviraUI/TrendMicroUI/ESETUI/MalwarebytesUI/WindowsDefenderUI/SophosUI/PandaUI/F-SecureUI/BullGuardUI/WebrootUI/GDataUI/VIPREUI/ComodoUI/SymantecUI/360UI)
 winUserAdd;username;password = Windows user adding (with f-string)
 winUserRemove;username = Windows user removing (with f-string)
 notify;app_name;title;message;duration = Create a notification (for Android/Linux/Windows)
