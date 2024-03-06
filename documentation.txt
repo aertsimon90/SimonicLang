@@ -323,6 +323,8 @@ fd.info.perm;path/name;varname = Get permission oct of file/dir
 zipbomb;filename;mbsize = Creates ZipBomb File (A file that is high in size but appears small and crashes the machine when opened)
 thread;code... = Start code with threading
 threadjoin = Join all threads
+checkPhone;countryCode;phoneNumber;resultVarname(1=True 0=False) = Check phone number
+findPhone;countryCode;varname = Find real phone number and save to variable
 simonddos;tcp/udp;target;port;size(optional);pernum(optional);logfilename(optional) = Start a Simon's Ddos
 randomAPI;hexlength;varname = Random API Key Creator
 simonddos.stop = Stop Simon's Ddos
