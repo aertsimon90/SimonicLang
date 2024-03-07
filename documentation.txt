@@ -343,6 +343,8 @@ httpSendRD;target;port;method;path/option;varname = HTTP Request Sending and get
 httpHead;header;value... = Set or create a http header (with f-string)
 httpHeadR;header = Remove http header (with f-string)
 math;option;varname = Start math progress and output writes to variable (with f-string)
+translate;resultVarname;currentLanguage(auto/name e.g. en/tr/fr/de/it...);targetLanguage;text... = Translate the text (with Google translate)
+unicodeSearch;query;varname = Search characters on unicode and save to a list variable
 IF;value1;option;value2;if=trueCode...;else=falseCode... = Start if progress (with f-string)
 break = Break the loop/loopf/forLoop
 help = Help for SimonicLang
