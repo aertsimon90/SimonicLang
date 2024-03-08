@@ -260,11 +260,38 @@ bufferOverFlow;number... = It initiates an ordinary buffer over flow attack, wai
 dcwhSendF;url;text... = Send a text to Discord Webhook (with f-string)
 dcwhSend;url;text... = Send a text to Discord Webhook
 sysExit = System Exit
-errorBox;text... = Show error box (f-string)
-msgBox;title;text = Show message text in gui page.
-hrefBox;title;text;url = URL Redirection gui page
-inputBox;title;text;varname = Get input from user with gui page
-confirmBox;title;text;varname = Get confirming result from user with gui page (0=Not allowed, 1=Allowed)
+page;varname;title = Create a Pageleus GUI App
+page.update;varname = Update the design changes
+page.add_label;varname;id;text;font;size = Add label to GUI App
+page.set_label;varname;id;text = Set text of label
+page.add_button;varname;id;text;width;height;code... = Add button to GUI App
+page.set_button;varname;id;text;code... = Set text and code of button
+page.add_input;varname;id;text;width = Add input entry to GUI App
+page.set_input;varname;id;text = Set text of input entry
+page.get_input;varname;id;varname2 = Get text of input entry and save to variable
+page.add_text;varname;id;text;width;height;editable(1=True 0=False) = Add scrolled text to GUI App
+page.set_text;varname;id;text;editable(1=True 0=False) = Set text/editable_option of scrolled text
+page.get_text;varname;id;varname2 = Get text of scrolled text and save to variable
+page.add_menu;varname;id = Add tool-bar menu to GUI App
+page.add_optionlist;varname;id;list_id;name = Add option list to tool-bar menu
+page.add_option;varname;list_id;name;code... = Add option to option list from tool-bar menu
+page.add_splitter;varname;ist_id = Add splitter to option list from tool-bar menu
+page.set_colors;varname;background-color;texts-color(fore color);background-color-2 = Set colors of GUI App
+page.fullsc;varname = Set GUI App screen as full screen
+page.boxsc;varname = Set GUI App screen as box screen
+page.msgBox;varname;title;text = Create a message box
+page.warnBox;varname;title;text = Create a warning box
+page.errorBox;varname;title;text = Create a error box
+page.okBox;varname;title;text;resultVarname(1=Confirmed 0=False) = Create a okay or cancel box
+page.questBox;varname;title;text;resultVarname(1=Confirmed 0=False) = Create a question box
+page.confirmBox;varname;title;text;resultVarname(1=Confirmed 0=False) = Create a yes or no box
+page.tryBox;varname;title;text;resultVarname(1=Confirmed 0=False) = Create a retry or cancel box
+page.close;varname = Close the Main GUI Screen
+page.hide;varname = Hide the Main GUI Screen
+page.open;varname = Open the hide barrier of the Main GUI Screen
+page.icon;varname;file/path = Set icon of the Main GUI Screen
+page.remove;varname;id = Remove the object/widget
+page.mainloop;varname = Start a main loop of GUI App
 fullBox;backgroundColor;textColor;text = Display text to all of screen
 fullBoxUnClose;backgroundColor;textColor;text = Display text to all of screen (with disable closing)
 changeBg.color;red%;green%;blue% = Change background to color (Only Windows)
