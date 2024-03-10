@@ -128,6 +128,17 @@ SimonicNet.Open;ip or dns;varname = Get content of public main named file from s
 SimonicNet.WebOpen;ip or dns = Open server on user's browser
 SimonicNet.GetAll;ip or dns;password;varname = Get all data from server.
 SimonicNet.Search;query;result count;varname = Search on SimonicNet browser
+novasock;varname = Create a Novaleus Socket (Internet access socket (TCP) with a completely hidden proxy (Not fast))
+novasock.set_default_socket;varname = Replace Novaleus Socket system with standard socket system (gain automated proxy) (may contain errors)
+novasock.set_virtual_socket;varname = Fix standard socket system and disconnect standard with Novaleus
+novasock.bind;varname;target;port = Bind to target server
+novasock.connect;varname;target;port = Connect to target
+novasock.settimeout;varname;seconds = Set time out limit
+novasock.create_ssl;varname = Create default SSL/TCL Protocol context and upload to your Novaleus Socket
+novasock.remove_ssl;varname = Remove the SSL/TLS Protocol context
+novasock.sendall;varname;pack... = Send the pack to connected target
+novasock.recv;varname;maxbuffersize;varname2 = Load the reciev and save to a variable
+novasock.close;varname = Close and shutdown the Novaleus Socket
 HttpServer;host;port;apikey;varname = Create HTTP Server and save to variable (methods=GET, POST, PUT, DELETE)
 HttpServer.Setfile;varname;path;content... = Change or create content of file path (path e.g. /index.html)
 HttpServer.GetFile;varname;path;resultVarname = Get content from server file and save to result variable
