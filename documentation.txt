@@ -290,13 +290,13 @@ page.add_splitter;varname;ist_id = Add splitter to option list from tool-bar men
 page.set_colors;varname;background-color;texts-color(fore color);background-color-2 = Set colors of GUI App
 page.fullsc;varname = Set GUI App screen as full screen
 page.boxsc;varname = Set GUI App screen as box screen
-page.msgBox;varname;title;text = Create a message box
-page.warnBox;varname;title;text = Create a warning box
-page.errorBox;varname;title;text = Create a error box
-page.okBox;varname;title;text;resultVarname(1=Confirmed 0=False) = Create a okay or cancel box
-page.questBox;varname;title;text;resultVarname(1=Confirmed 0=False) = Create a question box
-page.confirmBox;varname;title;text;resultVarname(1=Confirmed 0=False) = Create a yes or no box
-page.tryBox;varname;title;text;resultVarname(1=Confirmed 0=False) = Create a retry or cancel box
+page.msgBox;title;text = Create a message box
+page.warnBox;title;text = Create a warning box
+page.errorBox;title;text = Create a error box
+page.okBox;title;text;resultVarname(1=Confirmed 0=False) = Create a okay or cancel box
+page.questBox;title;text;resultVarname(1=Confirmed 0=False) = Create a question box
+page.confirmBox;title;text;resultVarname(1=Confirmed 0=False) = Create a yes or no box
+page.tryBox;title;text;resultVarname(1=Confirmed 0=False) = Create a retry or cancel box
 page.close;varname = Close the Main GUI Screen
 page.hide;varname = Hide the Main GUI Screen
 page.open;varname = Open the hide barrier of the Main GUI Screen
