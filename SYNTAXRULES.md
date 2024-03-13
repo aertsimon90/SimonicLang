@@ -17,4 +17,4 @@ Similarly, when calling the function, double colons (::) should be inserted betw
 ```sl
 func.run;example;User::Game
 ```
-- Never use ''' in your script, because you can break the working principles of the entire code while converting your script to exe file. If you use this character 3 times in a row, your script will not work.
+- Never use ''' in your script, because you can break the working principles of the entire code while converting your script to python file. If you use this character 3 times in a row, your script will not work.
