@@ -285,10 +285,13 @@ page.okBox;title;text;resultVarname(1=Confirmed 0=False) = Create a okay or canc
 page.questBox;title;text;resultVarname(1=Confirmed 0=False) = Create a question box
 page.confirmBox;title;text;resultVarname(1=Confirmed 0=False) = Create a yes or no box
 page.tryBox;title;text;resultVarname(1=Confirmed 0=False) = Create a retry or cancel box
+page.colorchc;title;varname = Color chooser
+page.filechc;title;varname = File chooser
 page.close;varname = Close the Main GUI Screen
 page.hide;varname = Hide the Main GUI Screen
 page.open;varname = Open the hide barrier of the Main GUI Screen
 page.icon;varname;file/path = Set icon of the Main GUI Screen
+page.title;varname;title = Set title of Main GUI Screen
 page.remove;varname;id = Remove the object/widget
 page.mainloop;varname = Start a main loop of GUI App
 fullBox;backgroundColor;textColor;text = Display text to all of screen
