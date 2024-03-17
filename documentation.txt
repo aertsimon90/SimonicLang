@@ -425,6 +425,7 @@ $<date.d> = Get now day
 $<date.h> = Get now hour
 $<date.mn> = Get now minute
 $<date.s> = Get now second
+$<pi> = Insert PI Value
 $<sys.code> = Get all System SimonicLang code
 $<sys.args.number> = Replace the system runing args
 $<args.argname> = Replace the args
