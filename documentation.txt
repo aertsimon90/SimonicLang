@@ -139,7 +139,7 @@ novasock.settimeout;varname;seconds = Set time out limit
 novasock.create_ssl;varname = Create default SSL/TCL Protocol context and upload to your Novaleus Socket
 novasock.remove_ssl;varname = Remove the SSL/TLS Protocol context
 novasock.sendall;varname;pack... = Send the pack to connected target
-novasock.recv;varname;maxbuffersize;varname2 = Load the reciev and save to a variable
+novasock.recv;varname;varname2 = Load the reciev and save to a variable
 novasock.close;varname = Close and shutdown the Novaleus Socket
 HttpServer;host;port;apikey;varname = Create HTTP Server and save to variable (methods=GET, POST, PUT, DELETE)
 HttpServer.Setfile;varname;path;content... = Change or create content of file path (path e.g. /index.html)
