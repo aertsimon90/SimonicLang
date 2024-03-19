@@ -49,7 +49,8 @@ vAddToNewLine;varname;text = Moves to a new line in the string object and writes
 input;varname;text... = Input system
 inputf;varname;text... = Input system (with f-string)
 serverCalculate;ports;trueLevel;varname = Calculate how much servers in the world (e.g. serverCalculate;80,443;10;example)
-%;num1;num2;varname = Calculate the percentage of num1 to the num2 and save to variable(f-string)
+%in;num1;num2;varname = Calculate the percentage of the first number to the second number (example num1=1000 num2=15 result=6666.6...) (f-string)
+%out;num1;num2;varname = calculate the percentage of a number in the 2nd number (example num1=1000 num2=15 result=150) (with f-string)
 random;min;max;varname = Generates random number
 randomf;min;max;varname = Generates random number (with f-string)
 randoms;min;max;varname = Generates random uniform number
@@ -262,6 +263,8 @@ dcwhSend;url;text... = Send a text to Discord Webhook
 sysExit = System Exit
 page;varname;title = Create a Pageleus GUI App
 page.update;varname = Update the design changes
+paeg.add_image;varname;id;file = Add image to GUI App
+paeg.set_image;varname;id;file = Set image from GUI App
 page.add_label;varname;id;text;font;size = Add label to GUI App
 page.set_label;varname;id;text = Set text of label
 page.add_button;varname;id;text;width;height;code... = Add button to GUI App
