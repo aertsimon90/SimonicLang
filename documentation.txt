@@ -1,3 +1,4 @@
+chechsl = Check all options and features of your SimonicLang
 withlock;code... = Start SimonicLang code with threading lock
 fstr;code... = Use any command with f-string
 func;varname;args(e.g. arg1::arg2...);code... = Create a function
