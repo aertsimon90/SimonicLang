@@ -324,6 +324,7 @@ runPShell;command... = Run PowerShell Command (with f-string)
 runExe;filename... = Run exe file
 runAsync;await;code... = Run SimonicLang code with Async
 runBF;outputVarname;tapeMemorySize;code... = Run BrainFuck code and save output to variable
+listenMic;duration(seconds);filename = Listen the microphone and save data to file.wav
 runC;code... = Run the C code
 runJS;code... = Run the Java script code
 runJava;code... = Run the Java code
