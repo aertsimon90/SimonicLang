@@ -82,6 +82,7 @@ mouseClickRight = Click with mouse on screen (Right click)
 mouseClickLeft = Click with mouse on screen (Left click)
 mousePos;xVarname;yVarname = Get the mouse position
 keyboardWrite;text = Write with user's keyboard
+keyboardPress;text/button = Press the button with user's keyboard
 shakeMouse;power;duration = Move the mouse to random location
 disableMouse = Disable the mouse
 disableKeyboard = Disable the keyboard
