@@ -124,15 +124,15 @@ cloudGet;server.pythonanywhere.com;filename;varname = Get content from SimonClou
 cloudSet;server.pythonanywhere.com;filename;content... = Set content from SimonCloud (with f-string)
 cloudCom;server.pythonanywhere.com;outputVarname;command... = Start Command Prompt Command from SimonCloud (with f-string)
 cloudStart = Start SimonCloud Server for PythonAnywhere Server Coding (with flask) (with f-string)
-SimonicNet.Create;ip or dns;password = Create a server from SimonicNet (Free and unlimited) (SimonicNet: A versatile Internet platform facilitating server deployment, management, and interaction with other servers. Exclusive servers accessible solely through SimonicLang, not found on the worldwide web, enabling unique communication capabilities.)
-SimonicNet.SetFile;ip or dns;password;filename;content... = Create file or open file and set content from server
-SimonicNet.GetFile;ip or dns;password;filename;varname = Get file content from server
-SimonicNet.SetOpenFile;ip or dns;password;filename;content... = Create public file or open public file and write content from server
-SimonicNet.GetOpenFile;ip or dns;filename;varname = Get content of public file from server
-SimonicNet.Open;ip or dns;varname = Get content of public main named file from server
-SimonicNet.WebOpen;ip or dns = Open server on user's browser
-SimonicNet.GetAll;ip or dns;password;varname = Get all data from server.
-SimonicNet.Search;query;result count;varname = Search on SimonicNet browser
+snet.create;name(min 6);key = Create a SimonicNet Server (In virtual internet platform) (Basic managing: CRUD Create,Read,Update,Delete)
+snet.change_name;name;key;new_name = Change name of the SimonicNet server
+snet.change_key;name;key;new_key = Change key of the SimonicNet server
+snet.set_file;name;key;filename;content... = Create or update the file on SimonicNet server
+snet.get_file;varname;name;key;filename = Get content of the file on SimonicNet server and save to the variable
+snet.del_file;name;key;filename = Delete the file on SimonicNet server
+snet.set_open_file;name;key;filename;content... = Create or update the public file on SimonicNet server
+snet.get_open_file;varname;name;filename = Get content of the public file on SimonicNet server and save to the variable (not key required)
+snet.del_open_file;name;key;filename = Delete the public file on SimonicNet server
 novasock;varname = Create a Novaleus Socket (Internet access socket (TCP) with a completely hidden proxy (Not fast))
 novasock.set_default_socket;varname = Replace Novaleus Socket system with standard socket system (gain automated proxy) (may contain errors)
 novasock.set_virtual_socket;varname = Fix standard socket system and disconnect standard with Novaleus
@@ -248,6 +248,26 @@ vram.get_id;ramVarname;resultVarname = Get server data id of Virtual Ram
 vram.load_id;ramVarname;id = Restore your memory ID and access your memory again
 vram.set;ramVarname;variableName;data = Set data of variable from Virtual Ram
 vram.get;ramVarname;variableName;resultVarname = Load the variable from Virtual Ram
+decryfor.encrypt;varname;algo(a string key);key(a real string key);text = Encrypt the text and save result to a variable (with De Cry For)
+decryfor.decrypt;varname;algo(a string key);key(a real string key);encrypted_text = Decrypt the encrypted text and save result to a variable (with De Cry For)
+67;varname;title;width;height = Create game window with Amfiber67 Game Engine
+67.rl;varname = Restore object locations (blocks out of border) (Amfiber67)
+67.title;varname;new_title = Change title of the Amfiber67 game window
+67.load_image;varname;fileid;fil path/url of image;width;height;opacity(0-100) = Load the image for Amfiber67
+67.add_object;varname;id;fileid;x;y = Create a object for Amfiber67
+67.add_textobject;varname;id;font;size;color;text;x;y = Create a text object for Amfiber67
+67.move_object;varname;id;xadd;yadd = Move the object
+67.set_location;varname;id;x;y = Set location of the object
+67.set_image;varname;id;fileid = Set image of the object
+67.add_button;varname;id;x;y;width;height;code... = Create a button for Amfiber67
+67.set_button;varname;id;code... = Set code of the button
+67.add_key;varname;id;key;code... = Add key pressing code for Amfiber67
+67.set_key;varname;id;code = Set code of the key pressing
+67.insert_mouse;varname = Insert mouse image to mouse location
+67.pmos;varname;xVarname;yVarname = Get mouse location on the game screen
+67.update;varname = Update for mainloop
+67.check;varname;canQuit?(1=True 0=False) = Check pressing activitys for mainloop
+67.close;varname = Close the Amfiber67 game.
 setVolume;value = Set all volume
 setBrightness;value = Set monitor brightness
 setDateTime;year;month;day;hour;minute;second = Set Date && time
@@ -445,29 +465,3 @@ $<pi> = Insert PI Value
 $<sys.code> = Get all System SimonicLang code
 $<sys.args.number> = Replace the system runing args
 $<args.argname> = Replace the args
-Example Code:
-optilogf;Hello $<sys.user>!$<n>
-optilogf;Virtual os loading...$<n>
-simac;a;example123;32
-simac.run;a
-note;This code makes memory based virtual os
-optilogf;Virtual os launched!$<n>
-wait;1
-unicodeRandomText;text;33;128;25
-note;This code makes random unicode text
-fstr;simac.write;a;a.txt;$<v.text>
-simac.read;a;a.txt;a
-note;This code writes to virtual file and reads
-optilogf;Virtual File content: $<v.a>$<n>
-optilogf;SimonicNet loading...$<n>
-randomAPI;16;pawd
-fstr;SimonicNet.Create;88.45.123.9;$<v.pawd>
-note;This code makes api key and creates SimonicNet server with api key password (unlimited)
-optilogf;SimonicNet server created!$<n>
-fstr;SimonicNet.SetFile;88.45.123.9;$<v.pawd>;a.txt;Hello for world
-optilogf;Real virtual file created with my cloud server...$<n>
-wait;10
-func;hello;text;log;$<args.text>
-func.run;hello;Hello for users!
-shutdown
-note;close the pc...
