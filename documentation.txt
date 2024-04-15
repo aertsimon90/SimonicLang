@@ -117,7 +117,7 @@ rpcFile;ipaddr;filepath = Send file with rpc
 rpcCom;ipaddr;command... = Send cmd command with rpc
 rpcSetup = Setup the rpc protocol
 download;url;filename;output(1=True 0=False) = Download a file from web
-shorturl;varname;url... = Short the URL with tinyurl url shortener and save to variable
+shorturl;varname;service(is.gd/tinyurl.com/cleanuri.com);url... = Short the URL with any services and save url to a variable
 rotateScreen;degree(only 90, 180, 270) = Rotate the screen on hour path
 rotateScreenRandom = Rotate the screen on hour path and random degree
 cloudGet;server.pythonanywhere.com;filename;varname = Get content from SimonCloud (with f-string)
